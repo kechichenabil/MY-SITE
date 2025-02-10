@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Vinyl&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+    user-select: none;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+
+.container{
+    position: relative;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 90px;
+    background-color: white;
+}
+
+.logo{
+    font-size: 0.8em;
+    font-weight: 700;
+    color: #274169;
+    user-select: none;
+}
+
+.content a{
+    position: relative;
+    text-decoration: none;
+    color: #274169;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-left: 30px;
+
+}
+
+.content a::after{
+    content: '';
+    border: 1px solid #274169;;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -8px;
+    border-radius: 20px;
+    transform: scale(0);
+    transition: .2s;
+}
+
+.content a:hover::after{
+    transform: scale(1);
+    transition: .2s;
+}
+
+section{
+    background: #f3f1f1;
+    height: 100vh;
+    width: 100%;
+}
+
+.container2{
+    display: flex;
+    align-items: center;
+    width: 1100px;
+    margin: auto;
+    height: 80vh;
+}
+
+.container2 img{
+    position: relative;
+    left: 190px;
+}
+
+.content2 .user{
+    padding: 10px 0px;
+    font-size: 3em;
+    font-weight: 700;
+    word-spacing: 10px;
+    letter-spacing: 3px;
+    color: #274169;
+    text-shadow: 3px 3px 3px #00000033;
+}
+
+.container2 .p1{
+    color: #57c55c;
+    font-weight: 500;
+}
+
+.container2 .p2{
+    color: #375583;
+    font-weight: 500;
+}
+
+.container2 .social{
+    font-size: 1.6em;
+    margin-top: 10px;   
+}
+
+.social a{
+    margin: 0px 10px;
+    color: #645f5f;
+}
+
+.social a:hover{
+    color: #375583;
+}
+
+.content2 .submit a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    right: 9px;
+    border: 2px solid #57c55c;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    background: #57c55c;
+    transition: .5s;
+}
+
+.content2 .submit a:hover{
+    font-size: 19px;
+    box-shadow: 5px 5px 5px #89e78e;
+    transition: .5s;
+}
+
+.content2 .submit{
+    margin-top: 10px;
+}
+
+.container3 , .skills{
+    width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+}
+
+.about1 , .skills{
+    background-color: white;
+    padding: 2rem 2px;
+    height: 110vh;
+}
+
+.about1 h2 , .skills h2{
+    text-align: center;
+    font-size: 30px;
+    color: #375583;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding-top: 3rem ;
+}
+
+.about1 hr , .skills hr{
+    width: 100px;
+    height: 3px;
+    background-color: #89e78e;
+    border: none;
+    margin: 5px auto 0;
+}
+
+.about1 .about-content{
+    margin-top: 8rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    column-gap: 5rem;
+}
+
+span{
+    color: #57c55c;
+}
+
+.about1 .about-content .col-1 h3{
+    font-size: 30px;
+    color: #375583;
+    margin-bottom: 20px;
+}
+
+.about1 .about-content .col-1 p{
+    color: #645f5f;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.about1 .about-content .col-2 p{
+    margin-bottom: 20px;
+    color: #645f5f;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+.about2{
+    background-color: white;
+}
+
+.skills{
+    background-color: #274169;
+    width: 100%;
+    padding: 30px 140px;
+    height: 100vh;
+
+}
+
+.skills-content{
+    padding-top: 5rem;
+}
+
+.skills-content .row {
+    background-color: #0f272d;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: repeat(5 , 1fr);
+}
+
+.skills h2{
+    color: white;
+}
+
+.skills-content .row .item{
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 1rem;
+    transition: .2s;
+} 
+
+.skills-content .row .item:hover{
+    transition: .2s;
+    box-shadow: 10px 10px 20px #141414;
+    cursor: pointer;
+}
+
+
+@media (max-width:1000px){
+    .container{
+        padding: 5px 10px;
+    }
+
+  .logo{
+       font-size: 0.6em;
+    }
+
+    .content a{
+        margin-left: 20px;
+        font-size: 1em;
+    }
+ 
+     .container2 .user{
+        font-size: 1.8em;
+        padding: 3px 0px;
+        word-spacing: 0px;
+        letter-spacing: 2px;
+     }
+
+     .container2 .social{
+        font-size: 1.3em;
+        margin-top: 3px;
+     }
+
+     .content2 .submit a{
+        font-size: 10px;
+     }
+
+     .content2 .submit a:hover{
+        font-size: 11px;
+     }
+
+     .container3{
+        width: 700px;
+        padding: 0 1rem;
+     }
+
+     .about1{
+        padding: 2rem 0px;
+        height: auto;
+     }
+
+}
+
+
+
